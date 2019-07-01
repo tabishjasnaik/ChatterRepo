@@ -9,7 +9,7 @@ const port = process.env.PORT || 9002;
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/index1.html")
+    res.sendFile(__dirname + "/public/index.html")
 })
 
 io.on("connection", (client) => {
